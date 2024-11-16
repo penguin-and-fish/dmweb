@@ -1,0 +1,467 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --primary-color:#4891ff;
+    --light-color: #f4f4f6;
+    --dark-color:#111;
+}
+body{
+    background-image: url(../images/backpic.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Potta+One',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/* navbar */
+.navbar{
+    background-color: rgb(225, 225, 64);
+    padding: 10px;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .main-menu ul{
+    display:flex;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    color:var(--primary-color);
+}
+
+/* Hero */
+.hero{
+    margin-bottom: 50px;
+}
+
+.hero .hero-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container{
+    background-size:contain;
+    background-position:center bottom;
+    height:300px;
+}
+
+.hero .hero-content .hero-bottom{
+    margin-left:50px;
+}
+
+.hero .hero-text{
+    width:50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    background-color: purple;
+    margin: 20px;
+    margin:0 auto;
+    border-style: none;
+}
+
+.hero .date{
+    width: 50%;
+    height :50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #000;
+}
+/* video */
+.video{
+    padding:10px 0 40px;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-pre{
+    margin-bottom: 20px;
+}
+/* testimonial */
+.testimonials{
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.testimonials .testimonials-grid .card p:first-child{
+    color: #4891ff;
+    background-color: aqua;
+}
+.testimonials .testimonials-grid .card p:last-child{
+    color: #333;
+    background-color: antiquewhite;
+}
+/* utility */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+.container-sm{
+    max-width: 800px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(225, 225, 64);
+    color:#333;
+    font-weight: 600;
+    font-size:larger;
+    text-decoration: none;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left:5px;
+    margin-right:10px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn-dark{
+    background-color:rgb(225, 225, 64);
+    color: #000;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+/* Dropdown Button */
+.dropbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(225, 225, 64);
+    color:#000;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left:5px;
+    margin-right:10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(225, 225, 64);
+    min-width: 120px;
+    border-radius:20px ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: rgb(225, 225, 64);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {.dropbtn {color: var(--primary-color);}}
+/* tect classes */
+.text-xxl{
+    width: 100%;
+    color: rgb(225, 225, 64);
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 150px 0 20px;
+}
+.text-xl{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+.text-lg{
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+.text-md{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+.text-sm{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+.text-center{
+    text-align: center;
+}
+/* background */
+.bg-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light{
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-black{
+    background-color: #000;
+    color: #fff;
+}
+.bg-yellow{
+    background-color: rgb(225, 225, 64);
+}
+/* card */
+.card{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* website */
+.website .website-bg h4{
+    background-color: var(--primary-color);
+    color: orange;
+    border-color: red;
+    font-size:50px;
+    font-weight: 1000;
+    line-height: 3;
+    border: 100px;
+    border-color: aqua;
+    margin-left: 100px;
+}
+.website .website-bg p{
+    background-color: var(--primary-color);
+    color: aquamarine;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+/* hero idea */
+.idea{
+    width:60%;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(84, 1, 84);
+    border-radius: 50px;
+    margin-left: 300px;
+    border-style: none;
+    margin-bottom: 250px;
+    
+}
+.idea p{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+.idea p:nth-child(1){
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(170, 3, 170);
+    color: rgb(225, 225, 64);
+}
+.idea p:nth-child(2){
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* hero presum */
+.presum{
+    width:60%;
+    height: 400px;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(84, 1, 84);
+    border-radius: 50px;
+    margin: 20px;
+    margin:0 auto;
+    margin-left: 300px;
+    border-style: none;
+    margin-bottom: 250px;
+    
+}
+.presum p{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+.presum p:nth-child(1){
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(170, 3, 170);
+    color: rgb(225, 225, 64);
+}
+.presum p:nth-child(2){
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* hero timetable */
+.timetable{
+    width:60%;
+    height: 530px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(84, 1, 84);
+    margin: 20px;
+    margin:0 auto;
+    border-style: none;
+    border-radius: 50px;
+    margin-left: 300px;
+    margin-bottom: 300px;
+}
+.timetable .present{
+    flex: 1;
+    margin-right: 5px; /* 添加間距，避免與 GIF 擠壓 */
+}
+.timetable p,h2,h1{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+.timetable .content-container{
+    display: flex;
+    align-items: flex-start; /* 保持內容頂部對齊 */
+    justify-content: space-between;
+    margin-top: 20px; /* 與 h1 保持距離 */
+}
+.timetable h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 60px;
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(170, 3, 170);
+    color: rgb(225, 225, 64);
+}
+.timetable .present h2{
+    width: 40%;
+    display: flex;
+    padding-left: 100px;
+    font-size: large;
+    color:beige;
+    font-size: smaller;
+}
+.timetable .present .p1{
+    width: 80%;
+    display: flex;
+    padding-left: 100px;
+    font-size:25px;
+    color: rgb(225, 225, 64);
+    font-weight: 600;
+}
+.timetable .present .p2{
+    display: inline-block;
+    margin-left: 100px;
+    width: 15%;
+    font-size:15px;
+    text-align: center;
+    background-color:rgb(225, 225, 64);
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.gif-container img {
+    margin-top: 30px;
+    margin-right: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+/* animaiton */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
